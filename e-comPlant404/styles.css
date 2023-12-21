@@ -1,0 +1,262 @@
+*{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width:100%;
+    height:100%;
+    image-rendering: optimizeQuality;
+    position: relative;
+    display: flexbox;
+    gap: 2em;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(43, 226, 177);
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: green;
+    gap: 15px;
+    }
+    li {
+        list-style: none;
+    }
+    
+    li:hover {
+        color: rgb(37, 176, 165);
+    }       
+
+h1 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    color: green;
+    display: block;
+}
+
+ h2 {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: green;
+ }
+
+.contenedor {
+    width: 100%;
+    height: 50%;
+    position: relative;
+   
+    /* background-color: blueviolet;
+    height: 100%;
+    padding: 20px;
+    display: inline-block;
+    border: 5px; */
+
+}
+
+.carta {
+    width: 30%;
+    height:30%;
+    background-color: bisque;
+    opacity: .7;
+    outline: 2px solid brown;
+    border-radius: 25px;
+    display: inline-block; 
+    align-items: center;   
+    text-align: left;
+    padding: 20px;
+    margin: 10px;
+    gap: 15px;
+    line-height: 2;
+    position: relative;
+}
+
+.carta-imagen { 
+    width: 150px;
+    
+}
+.carta-descripcion {
+    text-align: center;
+
+}
+.carta-boton__detalle {
+    border: none;
+    padding: 10px 15px ;
+    background-color: rgb(157, 155, 155);
+    color: rgb(74, 50, 6);
+    border-radius: 5px;
+    margin: 5%;
+ 
+}
+
+.carta-boton__carrito {
+    border: none;
+    padding: 10px 15px ;
+    background-color: brown;
+    color: wheat;
+    border-radius: 5px;
+    margin: 5%;
+    
+}
+
+.carta-boton__detalle:hover{
+    background-color: rgb(108, 193, 199);
+}
+
+.carta-boton__carrito:hover{
+    background-color: rgb(200, 200, 28);
+    color: brown;
+}
+
+.modal-contenedor {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(143, 139, 139, 0.628);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.display-none {
+    display: none;
+}
+
+.imagen {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    /*object-fit: cover;*/
+}
+
+.carrito a {
+    background-color: royalblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+nav li span {
+    padding-left: 5px;
+
+}
+
+/* ------------CART PAGE--------------------------- */
+.products-container {
+    max-width: 800px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon {
+   font-size: 25px;
+   color: green;
+   margin-left: 10px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+.product-header {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+
+}
+
+.product-title {
+    width: 45%;
+
+}
+
+.price {
+    width: 15%;
+    border-bottom: 1px solid lightgrey; 
+    display: flex;
+    align-items: center;
+
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgrey;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.plantas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  
+}
+
+.plantas img {
+    width: 75px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+.basketTotalTitle {
+    width: 10%;
+
+}
+
+.basketTotal {
+    width: 20%;
+}
+
+.boton_comprar {
+font: bold;
+font-size: 20px;
+color: rgb(58, 177, 78);
+
+background-color: rgb(141, 36, 62);
+margin-left: 550px;
+padding: 20px;
+border: 3px solid rgb(58, 133, 102) ;
+border-radius: 20px;
+}
+
+.boton_comprar:hover{
+    background-color: rgb(200, 200, 28);
+    color: brown;
+}
